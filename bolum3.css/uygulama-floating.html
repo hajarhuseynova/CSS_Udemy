@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      header,
+      footer {
+        background-color: #e56b6f;
+        color: #355070;
+        padding: 30px;
+      }
+      .col {
+        float: left;
+        padding: 15px 15px 15px 0;
+      }
+      .menu {
+        width: 25%;
+        height: 200px;
+      }
+      .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: #6d597a;
+        color: #fff;
+      }
+      .menu li:hover {
+        cursor: pointer;
+        background-color: #eaac8b;
+      }
+      .content {
+        width: 75%;
+        height: 200px;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Header</h2>
+    </header>
+    <main class="clearfix">
+      <div class="menu col">
+        <ul>
+          <li>Html</li>
+          <li>Css</li>
+          <li>Javascript</li>
+        </ul>
+      </div>
+      <div class="content col">
+        <h1>WEb gelishtirme</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          cupiditate quam facilis soluta rem ratione fuga tempora non? Odio in
+          architecto atque perferendis neque, libero fuga unde suscipit?
+          Repudiandae, pariatur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          quasi dignissimos neque voluptas quam voluptates, quisquam dolores
+          reprehenderit repellat itaque placeat consequuntur corrupti, possimus
+          commodi facere molestias aliquid? Consequatur, atque?
+        </p>
+      </div>
+    </main>
+    <footer>
+      <h2>Footer</h2>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Attribute Selector */
+      /* [class]{
+        background-color: red;
+    }
+    a[target]{
+        background-color: blue;
+    } */
+      /* Attribute Value Selector */
+      /* a[class="active"]{
+background-color: blueviolet;
+    } */
+      /* attribute * selector */
+      /* [class*="active"]{
+background-color: blueviolet;
+    }
+    *selectorda icinde active sozu olan butun classlari goturur active-span da olsa */
+
+      /* attribute ~ selector */
+      /* [class~="active"]{
+background-color: blueviolet;
+    }
+    active-span olanda goturmur,active span link verilse de goturur */
+      /* 
+    attribute | selector
+    [class|="active"]{
+background-color: blueviolet;
+    }
+    active sozu classin icinde 1 ci soz olanlar secilecek ve boshluq olmamalidir example active-span  */
+
+      /* attribute ^ selector
+[class^="active"]{
+background-color: blueviolet;
+    }
+ active sozu classin icinde 1 ci soz olmalidir , boshluq ola biler example active span  */
+
+      /* attribute $ selector */
+      [class$="active"] {
+        background-color: blueviolet;
+      }
+      /* active classini sonda ara, boshluq olar,- de olar */
+    </style>
+  </head>
+
+  <body>
+    <span class="text-active">Text</span>
+    <nav>
+      <a href="" target="_blank">Text</a>
+      <a href="" class="active">Value</a>
+      <a href="" class="link">Contact</a>
+    </nav>
+  </body>
+</html>

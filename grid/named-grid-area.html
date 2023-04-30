@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "header header header" 
+                                 "sidebar content content"
+                                 "sidebar . ."
+                                 "box-1 box-1 box-1"
+                                 "footer footer footer";
+            gap: 5px;
+        }
+        .header{
+           grid-area: header;
+           background-color: red;
+           text-align: center;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: blue;
+        }
+        .content{
+         grid-area: content;
+         background-color: yellow;
+        }
+        .footer{
+           grid-area: footer;
+           background-color: aqua;
+        }
+        .box-1{
+           grid-area: box-1 ;
+           background-color: blueviolet;
+        }
+       
+        .header, .content, .sidebar, .box-1, .box-3, .box-2 {
+          border: 1px solid #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+           <h2>Page Header</h2>
+        </header>
+        <section class="content">
+           <h3>Lorem, ipsum dolor.</h3>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Eligendi, eos? Maiores quos minima eos et sint libero, distinctio,
+             a,praesentium perferendis pariatur culpa quibusdam asperiores?
+             Rem e arum impedit qui harum?</p>
+        </section>
+        <section class="sidebar">
+            <h2>Lorem, ipsum.</h2>
+            <ul>
+                <li>Hajar</li>
+                <li>Hajar</li>
+                <li>Hajar</li>
+                <li>Hajar</li>
+            </ul>
+        </section>
+        <div class="box-1">
+            <h3>box 1</h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Eligendi, eos? Maiores quos minima eos et sint libero, distinctio,
+            a,praesentium perferendis pariatur culpa quibusdam asperiores?
+            Rem e arum impedit qui harum?
+        </div>
+        <div class="box-2">
+            <h3>box 2</h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Eligendi, eos? Maiores quos minima eos et sint libero, distinctio,
+            a,praesentium perferendis pariatur culpa quibusdam asperiores?
+            Rem e arum impedit qui harum?
+        </div>
+        <div class="box-3">
+            <h3>box 3</h3>
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Eligendi, eos? Maiores quos minima eos et sint libero, distinctio,
+             a,praesentium perferendis pariatur culpa quibusdam asperiores?
+             Rem e arum impedit qui harum?
+        </div>
+      
+        <footer class="footer">
+            Lorem ipsum dolor sit amet.
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: #9f86c0;
+        padding: 0 20px;
+      }
+      nav a {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        align-self: center;
+        padding: 10px;
+      }
+      .navigation {
+        display: flex;
+        list-style: none;
+      }
+      .navigation a {
+        display: block;
+        padding: 16px;
+      }
+      .navigation a:hover {
+        background-color: #5e548e;
+      }
+      .navigation li:last-child {
+        display: none;
+      }
+      @media (max-width: 600px) {
+        nav {
+          position: relative;
+          flex-direction: column;
+        }
+        nav a {
+          align-self: flex-start;
+        }
+        .navigation {
+          flex-direction: column;
+        }
+        .navigation a {
+          text-align: center;
+          padding: 10px;
+          border-top: 1px solid #5e548e;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .responsive .navigation li:not(:last-child) {
+          /* last childden bashqalari baglansin */
+          display: none;
+        }
+        .navigation li:last-child {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 10px;
+        }
+        .responsive .navigation li:not(:last-child) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="responsive">
+      <a href="">Logo</a>
+      <ul class="navigation">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Contact</a></li>
+        <li>
+          <a href=""><i class="fa fa-bars"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
